@@ -1,0 +1,51 @@
+﻿Customer_id,Customer_name,Account_no,Account_type,Transaction_ID,Debit_card,Branch,CUSTOMER_CITY,Age,Gender
+1,Arthar  Rayner,10133333,Savings,33333,3742454554,SBI_Brownsville,Gurugram,21,Male
+2,Chrissie  Rayner,10241012,FD,41012,2536478999,SBI_Littleton,Jalandar,22,Male
+3,Jethro Byrom Winear,10342022,Savings,42022,4788874145,SBI_Caguas_BPB,Nalanda,30,Male
+4,Lura  Flye,10442028,RD,42028,1121544785,SBI_San Marcos,Itanagar,25,Male
+5,Merrill  Ratcliff,10542033,FD,42033,3252541789,SBI_Brownsville,Agartala,27,Male
+6,Venita Lennard Rutgers,10642037,RD,42037,8587412563,SBI_Passaic,Raipur,40,Male
+7,Orbadiah  Royson,10742041,Savings,42041,5632558967,SBI_Caguas_HC,Bhopal,45,Male
+8,Merle  McGenn,10842044,FD,42044,2356987410,SBI_Lawrence,Srinagar,34,Male
+9,Fidel  Windas,10942047,FD,42047,3256987452,SBI_Caguas_QS,Itanagar,23,Male
+10,Beatrice  Feedome,11042051,RD,42051,9658458952,SBI_Brownsville,Gandhinagar,26,Male
+11,Asia  Trudgion,11144444,Savings,44444,2362001450,SBI_Caguas_SW,Patna,26,Male
+12,Nessa  Brisse,11289890,RD,89890,2564789520,SBI_Littleton,Agartala,32,Female
+13,Cristine Vittorio Braxay,11397009,FD,97009,1256589745,SBI_Caguas_IOG,Bhopal,31,Female
+14,Tucky  Sabbatier,11440901,RD,40901,2365858547,SBI_Pico Rivera,Visakhapatnam,28,Female
+15,Peg  Welbrock,11540914,Savings,40914,1467459856,SBI_Brownsville,Panaji,24,Male
+16,Amity  Birkenshaw,11640930,RD,40930,1256900120,SBI_Littleton,Kochi,29,Male
+17,Marylynne Sheff Peddel,11740935,FD,40935,9874585987,SBI_Taylor,Kochi,23,Male
+18,Vladamir Augy Hehl,11840943,Savings,40943,5231456632,SBI_Martinez,Kanpur,30,Male
+19,Giacomo  Clifton,11940961,FD,40961,6541148975,SBI_Caguas_RTB,Gangtok,35,Male
+20,Dalila  Weatherhead,12040965,FD,40965,5216320154,SBI_West New York,Warangal,41,Male
+21,Sherlock Vince Woolliams,12140903,RD,40903,2563214552,SBI_Caguas_OWM,Imphal,33,Female
+22,Elladine Kenneth Dealy,12240918,Savings,40918,9874521032,SBI_Passaic,Kohima,37,Female
+23,Marlow Deane Seleway,12340962,RD,40962,2105469875,SBI_Lawrence,Ambala,39,Male
+24,Haywood Cesare Gernier,12441017,Savings,41017,9845214756,SBI_Littleton,Vellore,28,Female
+25,Sampson  Genge,12541019,FD,41019,3569874163,SBI_Caguas_HC,Cuttack,21,Female
+26,Iggy  Wardale,12642027,Savings,42027,4632158520,SBI_Passaic,Kohima,24,Female
+27,Lorain  Crone,12742030,Savings,42030,8521479230,SBI_Lawrence,Thoubal,36,Female
+28,Denny  Hehir,12822222,RD,22222,5410387521,SBI_Brownsville,Leh,28,Male
+29,Edmund  Trigg,12940905,FD,40905,2589744725,SBI_Passaic,Warangal,27,Male
+30,Fawnia  Swale,13040910,RD,40910,1547895470,SBI_Lawrence,Mandi,37,Male
+31,Cristine  Juden,13140923,Savings,40923,7522145987,SBI_Caguas_IOG,Srinagar,30,Male
+32,Freeman Bartlet Ledeker,13240928,RD,40928,4136591024,SBI_Passaic,Coimbatore,34,Male
+33,Gina  Massimi,13340931,Savings,40931,4896547785,SBI_Lawrence,Ahmedabad,29,Male
+34,Amil Curr Fawbert,13440963,FD,40963,5222265410,SBI_Brownsville,Bhilai,43,Female
+35,Clarinda  Scoone,13540968,Savings,40968,7878825220,SBI_Lawrence,Gangtok,38,Female
+36,Reta  Nairy,13676002,RD,76002,8888603879,SBI_Caguas_HC,Kota,26,Female
+37,Nessy  Royal,13776007,FD,76007,8574155200,SBI_Passaic,Itanagar,22,Male
+38,Devlen  Pietraszek,13876008,Savings,76008,5262200360,SBI_Lawrence,Ranchi,37,Male
+39,Rhoda Arlin Biddles,13976010,RD,76010,2259823029,SBI_Caguas_HC,Agartala,31,Male
+40,Florenza Marwin Tortice,14076013,RD,76013,1451205840,SBI_Lawrence,Panaji,36,Male
+41,Trumaine Arel Lukock,14176014,FD,76014,5862520304,SBI_Passaic,Nalanda,31,Male
+42,Bogart Raimund Summersby,14285613,Savings,85613,3255662026,SBI_Caguas_IOG,Lucknow,25,Male
+43,Sawyer  Ismail,14385617,RD,85617,4855200920,SBI_Lawrence,Buxar,23,Female
+44,Nelie Rollin Camelin,14440902,FD,40902,8544692271,SBI_Taylor,Itanagar,34,Male
+45,Jacklin  Stango,14540906,Savings,40906,2520236150,SBI_Lawrence,Pune,37,Male
+46,Ilario  Hadfield,14640912,RD,40912,8574296586,SBI_Brownsville,Jamshedpur,29,Male
+47,Ruperto Leupold Martinez,14740920,FD,40920,8.54E+14,SBI_Lawrence,Warangal,27,Male
+48,Meredeth  Blaycock,14840960,Savings,40960,3522547255,SBI_Taylor,Varanasi,21,Male
+49,Torrance  Scrowby,14941004,FD,41004,7859830256,SBI_Lawrence,Bhubaneswar,31,Male
+50,Berton Ryan Mc Pake,15055236,Savings,55236,2658741551,SBI_Caguas_IOG,Siliguri,24,Male

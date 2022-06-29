@@ -1,0 +1,51 @@
+﻿ins_id,Hospitals,Members_covered,Location,Member_ID,Insurance_type,policy_Validity_date,premium_payments_date
+100,Aditya_Hospital,3,Hyderabad,SAB637903,Life,2015-08-21,2002-08-21
+101,Bombay Hospital Institute Of Medical Centre,2,Mumbai,NAV223098,Health,2015-08-18,2002-08-18
+102,Chennai_Apollo_Hospital,5,Chennai,ANN563901,Life,2016-03-21,2002-03-21
+103,Chord_Road_Hospital,8,Bangalore,SOG331200,Health,2024-11-30,2002-11-30
+104,City_Hospital,5,Noida,ABH315603,Life,2016-08-12,2002-08-12
+105,Global_Hospital,3,Hyderabad,RAM111000,Health,2025-06-14,2002-06-14
+106,Harvey_Heart_Hospital,7,Chennai,MIT875642,Life,2012-09-21,2002-09-21
+107,Apex_Hospital,10,Jaipur,VIS000008,Health,2012-12-11,2002-12-11
+108,Amar_Leela_Hospital,4,Delhi,HAR321000,Life,2017-12-28,2002-12-28
+109,Bangalore_Institute_Of_Oncology,6,Bangalore,SUR547771,Health,2025-10-13,2002-10-13
+110,Bhagawan_Mahaveer_Jain_Hospital,9,Bangalore,RAJ909090,Life,2018-08-12,2002-08-12
+111,HOSMAT_Hospital,2,Bangalore,PRI322210,Health,2029-08-26,2002-08-26
+112,Kanpur_Medical_Centre,7,Kanpur,BHA123456,Life,2012-11-16,2002-11-16
+113,Kerkar_Hospital,3,Goa,KEE098765,Health,2021-08-15,2002-08-15
+114,Lakeside_Medical_Centre,8,Bangalore,SAM234567,Life,2015-06-15,2002-06-15
+115,Liberty_Hospital,4,Jaipur,VIK987654,Health,2023-03-12,2002-03-12
+116,Malar_Hospitals Ltd,3,Chennai,HAR345678,Life,2022-12-22,2002-12-22
+117,Sagar_Apollo_Hospital,3,Bangalore,SUS876543,Health,2024-02-15,2002-02-15
+118,Sir_Ganga_Ram_Hospital,2,New Delhi,SAN456789,Health,2018-12-14,2002-12-14
+119,Spring_Meadows_Hospital,9,Delhi,ARU765432,Health,2017-03-11,2002-03-11
+120,Quality_Care_Hospital,7,Hyderabad,LOG567890,Health,2011-03-01,2002-03-01
+121,Orthonova_Hospital,4,Delhi,AAR654321,Life,2009-05-02,2002-05-02
+122,Manipal_Hospital,5,Bangalore,ANA678411,Health,2031-04-06,2002-04-06
+123,Mallaya_Apollo_Hospital,8,Bangalore,PRI453100,Life,2018-08-04,2002-08-04
+124,Jeevan_Jyoti_Hospital,9,Allahabad,MUT789012,Health,2017-09-18,2002-09-18
+125,The_Bangalore_Hospital,3,Bangalore,LAK092833,Life,2025-09-19,2002-09-19
+126,Wockhardt_Medical_Centre,6,Kolkata,SOW180801,Health,2035-05-26,2002-05-26
+127,CDR Hospitals,4,Hyderabad,MUT201097,Life,2019-12-11,2002-12-11
+128,Yashoda_Super_Speciality_Hospital,2,Hyderabad,NAV110173,Health,2033-10-01,2002-10-01
+129,Tagore_HeartCare & Research_Centre,6,Punjab,NAV270474,Health,2011-08-14,2002-08-14
+130,Rajiv_GandhiCancer_Hospital & Research_Institute,3,Delhi,PRA837465,Health,2040-11-03,2002-11-03
+131,P.D.Hinduja National Hospital,2,Mumbai,SRI039457,Health,2033-02-13,2002-02-13
+132,MGM New Bombay Hospital,6,New Bombay,THI023456,Life,2025-11-11,2002-11-11
+133,Medical_Trust_Hospital,5,Kerala,GAY410729,Health,2018-08-16,2002-08-16
+134,Holy Hospital & Heart Centre,2,Haryana,SWA675839,Life,2015-08-22,2002-08-22
+135,Dr.J.J.Vora Memorial General Hospital,9,Gujarat,JEY0987653,Health,2026-03-28,2002-03-28
+136,Breach_Candy Hospital and Research Centre,2,Mumbai,SRI345678,Life,2017-05-07,2002-05-07
+137,B.M.Birla Heart Research Centre,4,Kolkata,BAL098765,Health,2035-03-03,2002-03-03
+138,Wockhardt Hospital & Kidney Institute,5,Kolkata,MOH432156,Life,2031-04-26,2002-04-26
+139,Leelavati Hospital and Medical Research,5,Mumbai,RIS618503,Health,2021-12-14,2002-12-14
+140,Chennai_Apollo_Hospital,6,Chennai,GOW098765,Health,2018-02-04,2002-02-04
+141,City_Hospital,7,Noida,JAY290401,Health,2034-09-16,2002-09-16
+142,Aditya_Hospital,9,Hyderabad,RAJ240500,Life,2031-04-01,2002-04-01
+143,Sagar_Apollo_Hospital,5,Bangalore,HAR657822,Health,2021-01-25,2002-01-25
+144,Manipal_Hospital,3,Bangalore,RAH436660,Life,2020-02-04,2002-02-04
+145,Mallaya_Apollo_Hospital,2,Bangalore,MOH888321,Health,2036-10-18,2002-10-18
+146,Quality_Care_Hospital,3,Hyderabad,BHA335599,Health,2037-05-15,2002-05-15
+147,Chord_Road_Hospital,4,Bangalore,UDH311200,Life,2032-01-15,2002-01-15
+148,Hyderabad Apollo Hospital,10,Hyderabad,SAI699504,Life,2035-01-26,2002-01-26
+149,CDR Hospitals,6,Hyderabad,KES641108,Life,2023-11-16,2002-11-16

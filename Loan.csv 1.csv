@@ -1,0 +1,51 @@
+﻿Loan_id,Type of loan,Branch,Disbursement,Interest
+200,Vehicle,Park Street,90000,8
+201,Home,Park Street,1000000,10
+202,Personal,Park Street,50000,10
+203,Home,New Town,2000000,10
+204,Vehice,Howrah,100000,8
+205,Vehicle,Howrah,100000,8
+206,Vehicle,Garia,500000,8
+207,Home,Park Street,2500000,10
+208,Home,Park Street,2500000,10
+209,Personal,New Town,60000,10
+210,Vehicle,Howrah,98000,8
+211,Vehicle,Garia,80000,8
+212,Personal,New Town,86000,10
+213,Vehicle,Garia,100000,8
+214,Home,Garia,3000000,10
+215,Home,Garia,4000000,10
+216,Home,Garia,3500000,10
+217,Home,Garia,5000000,10
+218,Personal,Howrah,100000,10
+219,Personal,Howrah,80000,10
+220,Personal,Howrah,200000,10
+221,Personal,Garia,85000,10
+222,Vehicle,New Town,80000,8
+223,Vehicle,Garia,80000,8
+224,Home,New Town,6000000,10
+225,Vehicle,Howrah,200000,8
+226,Vehicle,Garia,80000,8
+227,Home,Howrah,4000000,10
+228,Vehicle,Garia,600000,8
+229,Vehicle,Howrah,800000,8
+230,Vehicle,Park Street,1000000,8
+231,Vehicle,New Town,1000000,8
+232,Personal,Park Street,800000,10
+233,Home,Park Street,8000000,10
+234,Home,New Town,5000000,10
+235,Home,Park Street,4000000,10
+236,Home,Park Street,4000000,10
+237,Personal,Park Street,50000,10
+238,Home,Park Street,5000000,10
+239,Personal,Park Street,60000,10
+240,Home,Park Street,6000000,10
+241,Personal,Park Street,200000,10
+242,Home,New Town,5000000,10
+243,Home,New Town,5000000,10
+244,Home,New Town,5000000,10
+245,Personal,New Town,66000,10
+246,Personal,Park Street,55000,10
+247,Vehicle,Garia,100000,8
+248,Vehicle,Park Street,200000,8
+249,Personal,Howrah,90000,10

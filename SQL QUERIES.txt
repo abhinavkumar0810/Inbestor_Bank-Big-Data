@@ -1,0 +1,189 @@
+create database Bigdata_project;
+use bigdata_project;
+create table savings_account(Customer_id int primary key,
+Customer_name varchar(30), Account_no Int,
+Account_type Varchar(10),
+Transaction_ID Int,
+Debit_card Varchar(20),
+Branch Varchar(30),
+CUSTOMER_CITY Varchar(25),
+Age Int,
+Gender Varchar(10)
+);
+select * from savings_account;
+
+select count(*) from investments;
+
+create table credit_card(Credit_card_id	Int primary key,
+Card_CC_No Varchar(20),	Card_name Varchar(20),
+Marchant Varchar(20),
+Purchase_Date date,
+Validity_date date
+);
+
+select * from credit_card;
+
+create table health_insurance(Ins_id int primary key,
+Hospital_name varchar(60),	
+Members_covered Int,
+Location Varchar(20),
+Member_ID varchar(15),
+ins_type varchar(15),
+policy_exp_date date,
+premium_payments_date date
+);
+drop table health_insurance;
+select * from health_insurance;
+
+create table loan(Loan_id int primary key,
+loan_type Varchar(15),
+Branch Varchar(20),	
+Disbursement Int,Interest Int
+);
+select * from loan;
+
+create table Investments(Insv_id Int primary key,
+Demat_acc Int,	brokers Varchar(15),
+stocks_holding Int,	stocks_tran Int,
+bonds_name Varchar(30),	bonds_amount Int,Stocks_Codes varchar(10) 
+);
+
+create table Transaction_fact(Transction_id int primary key,
+Credit_card_id int,	Insv_id int, Ins_id	int, Customer_id Int, Loan_id Int,
+Credit_limit Int, Credit_Payments Int, savings_trans int,Savings_balance Int,	Insurance_Premium_Payments	Int, Insurance_Claims Int,
+Inv_transaction	int, Loan_Balance int,	Emi_payment int,
+foreign key(Credit_card_id) references credit_card(Credit_card_id),foreign key(Insv_id) references investments(Insv_id),
+foreign key(Ins_id) references health_insurance(Ins_id),foreign key(Customer_id) references savings_account(Customer_id),
+foreign key(Loan_id) references loan(Loan_id)
+);
+
+drop table health_insurance;
+drop table transaction_fact;
+select * from transaction_fact;
+
+select s.customer_id,s.customer_name,t.savings_balance,t.loan_balance,l.loan_type from savings_account s, loan l, transaction_fact t where t.customer_id=s.customer_id
+and l.loan_id=t.loan_id order by 1;
+
+#1)Produce report on account details of a customer and to report transactions made by customer 
+#(daily, monthly, for given start date-end date) customer details for each branch.
+
+
+select s.customer_id,s.customer_name,s.account_no,s.account_type,s.debit_card,s.branch,s.customer_city,s.age,s.gender,f.savings_balance,s.transaction_id,f.saving_trans,f.savings_balance-f.saving_trans as 'balance after Transaction' from savings s join transaction_fact f on s.customer_id=f.customer_id order by s.branch;
+
+#2)Dimension Account is used to get the Account Details of the customers of Investors Bank including Personal details.
+
+select * from savings;
+
+
+#Credit Cards Module
+#1)Report credit card details of customers and to fetch the card details of a customer,
+# monthly bill for a credit card number, customer details who have overdue
+
+select s.customer_id,s.customer_name,c.credit_card_id,c.card_cc_no,c.card_name,c.validity_date,f.credit_limit,
+f.credit_payments as 'Monthly_bill'
+from savings s join transaction_fact f on s.customer_id=f.customer_id
+join credit_card c on f.credit_card_id=c.credit_card_id;
+
+#2)To display customer details based on i) Card type
+select s.customer_id,s.customer_name,s.account_no,
+c.credit_card_id,c.card_cc_no,c.card_name,c.validity_date,f.credit_limit
+from savings s join transaction_fact f on s.customer_id=f.customer_id
+join credit_card c on f.credit_card_id=c.credit_card_id
+order by c.card_name;
+# ii) Credit limit range
+select * from transaction_fact;
+select s.customer_id,s.customer_name,s.account_no,
+c.credit_card_id,c.card_cc_no,c.card_name,c.validity_date,f.credit_limit
+from savings s join transaction_fact f on s.customer_id=f.customer_id
+join credit_card c on f.credit_card_id=c.credit_card_id
+where f.credit_limit between 20000 and 200000
+order by f.credit_limit;
+
+#3)To verify the credit card validity.
+select s.customer_id,s.customer_name,c.credit_card_id,c.card_cc_no,c.card_name,c.validity_date
+from savings s join transaction_fact f on s.customer_id=f.customer_id
+join credit_card c on f.credit_card_id=c.credit_card_id
+where DATE(c.validity_date) > CURDATE()
+order by 3;
+
+#4)Dimension credit is used to get the credit card information of customers.
+select * from credit_card;
+
+#loan
+
+#1)Report loan information’s of customers.
+select s.customer_id,s.customer_name,l.loan_id,l.type_of_loan,l.disbursement,l.interest,f.loan_balance,f.emi_payment,
+f.loan_balance-f.emi_payment as 'Balance after EMI payment'
+from savings s join transaction_fact f on s.customer_id=f.customer_id
+join loan l on l.loan_id=f.loan_id;
+
+#2To fetch customer details based on loan type.
+select s.customer_id,s.customer_name,l.loan_id,l.type_of_loan,l.disbursement,l.interest,f.loan_balance,f.emi_payment,
+f.loan_balance-f.emi_payment as 'Balance after EMI payment'
+from savings s join transaction_fact f on s.customer_id=f.customer_id
+join loan l on l.loan_id=f.loan_id
+order by 4;
+
+
+#3)To generate bill paid for loan EMI for a loan account number.
+
+select s.customer_id,s.customer_name,f.emi_payment as 'Bill payment',
+f.loan_balance-f.emi_payment as 'Balance after emi payment'
+from savings s join transaction_fact f on s.customer_id=f.customer_id
+join loan l on l.loan_id=f.loan_id;
+
+#4)Dimension Loan is used to get the loan details
+
+select * from loan;
+
+-- 1 To store customer info who have deposit accounts (FD, RD) in the Investors Bank.
+select s.customer_id,s.customer_name,s.account_no,s.account_type,s.customer_city,s.age,s.gender
+from savings_account s where s.account_type="FD"
+or s.account_type="RD";
+
+-- 2 & 3 & 4 To get deposit account info for a customer and to save stock details.
+-- To fetch stock info of a customer.
+-- To generate stocks report.
+select s.customer_id,s.customer_name,s.account_no,s.account_type, i.demat_acc,i.Stocks_holding,
+i.Stocks_tran,i.stocks_codes from savings_account s,transaction_fact tf, investments i where
+s.customer_id=tf.customer_id and tf.insv_id=i.insv_id;
+
+-- 5
+select s.customer_id,s.customer_name,s.account_no,s.account_type, i.demat_acc,i.bonds_name
+,i.bonds_amount from savings_account s,transaction_fact tf, investments i where
+s.customer_id=tf.customer_id and tf.insv_id=i.insv_id;
+
+
+-- 1 To store the customer details who have taken insurance (Life, Health) in Investors Bank & 2
+select s.customer_id,s.customer_name,s.customer_city,s.age,s.gender, i.ins_id,i.ins_type 
+from health_insurance i,savings_account s, transaction_fact tf where
+s.customer_id=tf.customer_id and tf.ins_id=i.ins_id order by i.ins_type;
+
+select * from health_insurance;
+
+-- 3 To fetch customer info for a given policy number.
+select s.customer_id,s.customer_name,s.customer_city,s.age,s.gender, i.ins_id,i.ins_type, i.member_id as 
+"policy_no" from health_insurance i,savings_account s, transaction_fact tf where
+s.customer_id=tf.customer_id and tf.ins_id=i.ins_id and i.member_id="SAB637903";
+
+-- 4 To check the policy expiry date for a policy number.
+select s.customer_id,s.customer_name,s.customer_city,s.age,s.gender, i.ins_id,i.ins_type,
+ i.policy_exp_date,i.member_id as 
+"policy_no" from health_insurance i,savings_account s, transaction_fact tf where
+s.customer_id=tf.customer_id and tf.ins_id=i.ins_id and i.member_id="SAB637903";
+
+-- 6 To generate premium paid certificate for the customers who have paid the premium amount (monthly, yearly).
+
+select s.customer_id,s.customer_name,s.customer_city,s.age,s.gender,tf.insurance_premium_payments
+ from savings_account s,transaction_fact tf
+where s.customer_id=tf.customer_id and tf.insurance_premium_payments>0;
+
+-- 7 To fetch the premium payment date for a policy number.
+select s.customer_id,s.customer_name,i.premium_payments_date,i.ins_id,i.ins_type,i.member_id as 
+"policy_no" from health_insurance i,savings_account s, transaction_fact tf where
+s.customer_id=tf.customer_id and tf.ins_id=i.ins_id and i.member_id="SAB637903";
+
+
+-- 8 
+select * from health_insurance;
+
